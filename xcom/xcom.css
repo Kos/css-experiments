@@ -1,0 +1,79 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  background: black;
+  font-family: "lcd_solidregular";
+  color: #e3e3e3;
+  font-size: 26px;
+  letter-spacing: 1px;
+
+  text-shadow:
+    2px 2px 0 #516d92,
+    -2px 2px 0 #516d92,
+    -2px -2px 0 #516d92,
+    2px -2px 0 #516d92,
+    2px 0 0 #516d92,
+    -2px 0 0 #516d92,
+    0 2px 0 #516d92,
+    0 -2px 0 #516d92;
+}
+
+.xcom-data-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.xcom-data-header th {
+  font: inherit;
+  text-align: left;
+}
+.xcom-data-row td:nth-child(n+2) {
+  color: #acdae7;
+  text-shadow:
+    2px 2px 0 #0d4f83,
+    -2px 2px 0 #0d4f83,
+    -2px -2px 0 #0d4f83,
+    2px -2px 0 #0d4f83,
+    2px 0 0 #0d4f83,
+    -2px 0 0 #0d4f83,
+    0 2px 0 #0d4f83,
+    0 -2px 0 #0d4f83;
+}
+.xcom-data-header th:nth-child(1) {
+  width: 70%;
+}
+.xcom-data-header th:nth-child(2) {
+  width: 20%;
+}
+.xcom-data-row td,
+.xcom-data-total td {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+.xcom-data-row td:not(:last-child):after,
+.xcom-data-total td:not(:last-child):after {
+  font-size: 10px;
+  content: "...............................................................................................................................";
+}
+.xcom-data-total td {
+  padding-top: 1em;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.xcom-border {
+  border-image: url('xcom-border.png') 16 16 16 16 repeat;
+  border-width: 16px;
+  padding: 15px 30px
+}
+
+.xcom-bg-1 {
+  background: url('arnie.png');
+  background-size: cover;
+}
+
