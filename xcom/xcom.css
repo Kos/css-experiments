@@ -46,15 +46,15 @@ body {
 .xcom-data-header th:nth-child(2) {
   width: 20%;
 }
-.xcom-data-row td,
-.xcom-data-total td {
+
+.dotted {
   white-space: nowrap;
   overflow-x: hidden;
+  width: 100%;
 }
-.xcom-data-row td:not(:last-child):after,
-.xcom-data-total td:not(:last-child):after {
+.dotted:after {
   font-size: 10px;
-  content: "...............................................................................................................................";
+  content: ".....................................................................................................................................";
 }
 .xcom-data-total td {
   padding-top: 1em;
@@ -67,8 +67,8 @@ h1 {
 }
 
 .xcom-border {
+  border: 16px solid;
   border-image: url('xcom-border.png') 16 16 16 16 repeat;
-  border-width: 16px;
   padding: 15px 30px
 }
 
