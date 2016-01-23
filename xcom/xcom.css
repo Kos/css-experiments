@@ -17,11 +17,17 @@ body {
     -2px 0 0 #516d92,
     0 2px 0 #516d92,
     0 -2px 0 #516d92;
+
+  cursor:  url(cursor.png) 0 0, auto;
+}
+button, a {
+  cursor: inherit;
 }
 
 .xcom-data-table {
   width: 100%;
   table-layout: fixed;
+  margin-bottom: 40px;
 }
 
 .xcom-data-header th {
@@ -77,3 +83,24 @@ h1 {
   background-size: cover;
 }
 
+.xcom-button {
+  border: 6px solid;
+  border-image: url('button-border.png') 6 6 6 6 repeat;
+  background: #8586b2;
+  font: inherit;
+  color: inherit;
+  text-shadow: 3px 3px 0 #516d92,
+    -3px 3px 0 #516d92,
+    -3px -3px 0 #516d92,
+    3px -3px 0 #516d92,
+    3px 0 0 #516d92,
+    -3px 0 0 #516d92,
+    0 3px 0 #516d92,
+    0 -3px 0 #516d92;
+  width: 100px;
+  vertical-align: middle;
+}
+.xcom-button:active {
+  border-image: url('button-border-2.png') 6 6 6 6 repeat;
+  padding: 2px 0 0 2px;
+}
